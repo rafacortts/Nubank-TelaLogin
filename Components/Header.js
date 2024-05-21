@@ -5,7 +5,12 @@ import {
   View,
   TouchableOpacity,
   ImageBackground,
+  Image
 } from "react-native";
+
+
+
+
 
 export default function App() {
   return (
@@ -20,9 +25,12 @@ export default function App() {
           <Text style={styles.buttonText1}>Pais</Text>
         </TouchableOpacity>
 
-        <Text style={styles.logo}>
-            NU
-        </Text>
+            <Image source={{uri: './img/Nubank_logo_Branco.svg.png'}}
+            
+            style={styles.logo}
+      
+            
+            />
 
         <View style={styles.loginContainer}>
           <Text style={styles.title}>
@@ -101,7 +109,9 @@ const styles = StyleSheet.create({
     top: 20, 
     left: 20,
     color :'#FFF',
-    fontSize:30
+    fontSize:30,
+    height: 30,
+    width: 50
   }
 
 });
